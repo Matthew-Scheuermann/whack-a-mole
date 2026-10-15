@@ -15,4 +15,6 @@ export const GameProvider = ({ children }) => {
 };
 
 // 3.) create a custom hook to use the context easily
-export const useGame = () => useContext(GameContext);
+export const useGame = () => {
+  return useContext(GameContext);
+};
